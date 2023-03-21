@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import nosotros from '../img/nosotros.jpg';
+---
+
+<Layout title="Nosotros" description="Blog y más cosas">
+  <main class="contenedor">
+    <h1 class="heading">Nosotros</h1>
+    <div class="contenido">
+      <img src={nosotros} alt="Imgen sobre nosotros" />
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          officiis quae eaque exercitationem inventore maxime sapiente excepturi
+          necessitatibus. Inventore dolore esse nobis nulla laudantium corrupti
+          labore tempore fuga ex voluptatibus.
+        </p>
+        <p>
+          Vel sit corrupti aliquid laborum rem soluta tempora consectetur
+          inventore laudantium natus? Quia non impedit nesciunt dignissimos
+          culpa, laudantium adipisci alias quam earum dolorum debitis? Enim fuga
+          laboriosam nisi quibusdam.
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .contenido {
+    display: grid;
+    gap: 4rem;
+  }
+  @media (min-width: 768px) {
+    .contenido {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+</style>
